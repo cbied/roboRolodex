@@ -1,7 +1,11 @@
-import React from 'react';
+import { Robot } from '../containers/App';
 import Card from './Card';
 
-const CardList = ({robots}) => {
+type robotProps = {
+    robots: Robot[]
+}
+
+const CardList = ({robots}: robotProps) => {
     const cardArr = robots.map((user,i) => {
         return <Card key={i} 
                     id={user.id} 

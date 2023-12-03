@@ -1,6 +1,6 @@
-import React from 'react';
+import { Robot } from "../containers/App";
 
-const Card = (robots) => {
+const Card = (robots: Robot) => {
     const { id, name, email } = robots;
     const robotAPIlink = 'https://robohash.org/'
     return (
